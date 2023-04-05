@@ -10,7 +10,7 @@ app = Flask(__name__)
 from src.models import db
 
 app.config['SQLALCHEMY_DATABSE_URI']= \
-    'mysql://root:556669@localhost:3306/movies'
+    'mysql://root:@localhost:3306/movies'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
 db.init_app(app)
